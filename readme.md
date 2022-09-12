@@ -5,8 +5,8 @@ _Are you bored of the normal, static booleans? Order now and get Maybe!_
  Maybe is a new boolean type that exists in a superposition of True and False, waiting for its wave function to collapse upon observation. Very similarly to the famous Schrödinger's cat 🐱📦🕵️
 
 # Installation
-```
-$ pip3 install https://github.com/hirsimaki-markus/boolshit/raw/main/dist/boolshit-1.0.0-py3-none-any.whl
+```shell
+pip3 install https://github.com/hirsimaki-markus/boolshit/raw/main/dist/boolshit-1.0.0-py3-none-any.whl
 ```
 
 # Usage
