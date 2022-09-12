@@ -75,3 +75,80 @@ defining a counterpart to every method and attribute of booleans. While
 strictly not `bool`, `Maybe` is a boolean in
 the practical sense. It acts like a duck, it quacks like a duck, and thus it
 is a duck.
+
+# A most beautifully formatted piece of art
+
+**Q:** Why would you paste source code here?
+
+**A:** It's called art. This source is beyond being production ready. It is museum ready.
+Also, documenting a handy list of magic methods.
+
+```Python
+# full source code
+gtr=getattr;prot=("real","numerator");def rnd(): return choice((True, False))
+class maybe(int):
+    def __bool__(_self): return rnd() # bool(M) ------[builtins section]------
+    def __pos__(_self): return +(rnd()) # +M
+    def __neg__(_self): return -(rnd()) # -M
+    def __invert__(_self): return ~(rnd()) # ~M
+    def __abs__(_self): return abs(rnd()) # abs(M)
+    def __repr__(_self): return str(rnd()) # repr(M)
+    def __str__(_self): return str(rnd()) # str(M)
+    def __int__(_self): return int(rnd()) # int(M)
+    def __float__(_self): return float(rnd()) # float(M)
+    def __ceil__(_self): return rnd() # math.ceil(M)
+    def __floor__(_self): return rnd() # math.floor(M)
+    def __trunc__(_self): return int(rnd()) # math.trunc(M)
+    def __add__(_self, other): return rnd() + other # M + x
+    def __radd__(_self, other): return other + rnd() # x + M
+    def __mul__(_self, other): return rnd()*other # M * x
+    def __rmul__(_self, other): return other*rnd() # x * M
+    def __pow__(_self, other): return rnd() ** other # M ** x
+    def __rpow__(_self, other): return other ** rnd() # x ** M
+    def __rshift__(_self, other): return rnd() >> other # M >> x
+    def __rrshift__(_self, other): return other >> rnd() # x >> M
+    def __lshift__(_self, other): return rnd() << other # M << x
+    def __rlshift__(_self, other): return other << rnd() # x << M
+    def __mod__(_self, other): return rnd() % other # M % x
+    def __rmod__(_self, other): return other % rnd() # x % M
+    def __truediv__(_self, other): return rnd() / other # M / x
+    def __rtruediv__(_self, other): return other / rnd() # x / M
+    def __floordiv__(_self, other): return rnd() // other # M // x
+    def __rfloordiv__(_self, other): return other // rnd() # x // M
+    def __sub__(_self, other): return gtr(rnd(), "__sub__")(other) # M - x
+    def __rsub__(_self, other): return gtr(rnd(), "__rsub__")(other) # x - M
+    def __index__(_self): return int(rnd()) # oct,bin,hex(M), [1,2,3][M]
+    def __round__(_self, *a): return gtr(rnd(), "__round__")(*a) # round(M)
+    def __format__(_self, f): return gtr(rnd(), "__format__")(f) # .format
+    def __and__(_self, other): return gtr(rnd(), "__and__")(other) # M & x
+    def __rand__(_self, other): return gtr(rnd(), "__rand__")(other) # x & M
+    def __or__(_self, other): return gtr(rnd(), "__or__")(other) # M | x
+    def __ror__(_self, other): return gtr(rnd(), "__ror__")(other) # x | M
+    def __xor__(_self, other): return gtr(rnd(), "__xor__")(other) # M ^ x
+    def __rxor__(_self, other): return gtr(rnd(), "__rxor__")(other) # x ^ M
+    def __lt__(_self, other): return gtr(rnd(), "__lt__")(other) # M < x
+    def __le__(_self, other): return gtr(rnd(), "__le__")(other) # M <= x
+    def __eq__(_self, other): return gtr(rnd(), "__eq__")(other) # M == x
+    def __ne__(_self, other): return gtr(rnd(), "__ne__")(other) # M != x
+    def __ge__(_self, other): return gtr(rnd(), "__ge__")(other) # M >= x
+    def __gt__(_self, other): return gtr(rnd(), "__gt__")(other) # M > x
+    def __divmod__(_self, other): return divmod(rnd(), other) # divmod(M, x)
+    def __rdivmod__(_self, other): return divmod(other, rnd()) # divmod(x, M)
+    def from_bytes(*_, **__): return rnd() # ---------[int() section]---------
+    def conjugate(_self): return int(rnd())
+    def bit_length(_self): return (rnd()).bit_length()
+    def as_integer_ratio(_self): return (rnd()).as_integer_ratio()
+    def to_bytes(self, *a, **kwa): return gtr(rnd(), "to_bytes")(*a, **kwa)
+    def __hash__(_s): return int(rnd()) # hash(M) ----[class meta section]----
+    def __getnewargs__(_self): return (None, ) # for pickling
+    def __dir__(_self): return gtr(rnd(), "__dir__")() # dir(M)
+    def __reduce__(_self): return gtr(rnd(), "__reduce__")() # pickling
+    def __delattr__(self, name): object.__delattr__(self, name) # obj del
+    def __init_subclass__(_self): return gtr(rnd(), "__init_subclass__")()
+    def __setattr__(self, name, value): object.__setattr__(self, name, value)
+    def __reduce_ex__(_self, prtcl): return gtr(rnd(), "__reduce_ex__")(prtcl)
+    def __init__(s): maybe.S = s; maybe.__new__ = lambda _:maybe.S # singleton
+    def __getattribute__(s, atr): # shadow attributes protected on C level
+        return int(rnd()) if atr in prot else object.__getattribute__(s, atr)
+Maybe = maybe()
+```
