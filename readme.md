@@ -1,22 +1,18 @@
 # boolshit - Maybe is the new True. Or False.
 
-Consider this project as a practical joke, and academic curiosity, a piece tangible eccentricity. A work of art if you will. With that out of the way;
+_Are you bored of the normal, static booleans? Order now and get Maybe!_
 
-Are you bored of the normal static booleans!? Order now and get the newfangled
-Maybe! It exists in a superposition of True and False so you will never know
-what you are getting! How exciting!
+ Maybe is a new boolean type that exists in a superposition of True and False, waiting for its wave function to collapse upon observation. Very similarly to the famous Schrödinger's cat 🐱📦🕵️
 
-When will your while loops end? How fuzzy can your boolean logic get? Will
-your assert statement fail or pass!? WILL YOU DIVIDE BY ZERO OR ONE!?!
-
-# Motivations behind this act of absurdity? Curiosity and learning.
-
-* Curiosity, which Maybe killed the cat.
-* Academic exercise, that May-e was on the subject of tedium.
-* Madness, to which there Maybe was a method.
-
+# Installation
+```
+$ pip3 install https://github.com/hirsimaki-markus/boolshit/raw/main/dist/boolshit-1.0.0-py3-none-any.whl
+```
 
 # Usage
+
+Any imaginable situation accepting `True` or `False` will accept `Maybe` without a hitch.
+
 ```Python
 >>> from boolshit import Maybe
 >>>
@@ -41,8 +37,19 @@ Traceback (most recent call last):
     def __rmul__(_self, other): return other*rnd() # x * M
 ZeroDivisionError: division by zero
 >>>
+>>> # and many more ...
 >>>
 ```
+
+# Motivations behind this act of absurdity? Curiosity and learning.
+
+Consider this project as a practical joke, and academic curiosity, a piece tangible eccentricity. A work of art if you will. With that out of the way motivations:
+
+* Curiosity, which Maybe killed the cat.
+* Academic exercise, that May-e was on the subject of tedium.
+* Madness, to which there Maybe was a method.
+
+# Technical
 
 Maybe is a singleton instance of the maybe class. Maybe can be used in any
 context that supports the classical, boring, booleans True and False.
