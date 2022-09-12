@@ -67,14 +67,11 @@ and it will behave exactly as `True` or `False`, depending on your luck.
 `Maybe` obeys the limitations of a singleton pattern. `Maybe is Maybe` will
 always be `True`, while `Maybe == Maybe` is determined upon observation.
 
-Below is a list of some example contexts that will accept Maybe, Both
-left hand and right hand operations will work as one might expect.
-
 # Technical jargon
 
 `bool` can not be subclassed with reasonable effort, so
 `maybe` is a subclass of `int`, as is `bool`. Maybe achieves compatibility by
 defining a counterpart to every method and attribute of booleans. While
-strictly not `bool`, `maybe` class and its instance, `Maybe` is a boolean in
+strictly not `bool`, `Maybe` is a boolean in
 the practical sense. It acts like a duck, it quacks like a duck, and thus it
 is a duck.
