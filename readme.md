@@ -46,7 +46,7 @@ ZeroDivisionError: division by zero
 Consider this project as a practical joke, and academic curiosity, a piece tangible eccentricity. A work of art if you will. With that out of the way, motivations;
 
 * Curiosity, which Maybe killed the cat.
-* Academic exercise, that May-e was on the subject of tedium.
+* Academic exercise, that Maybe was on the subject of tedium.
 * Madness, to which there Maybe was a method.
 
 # Technical
