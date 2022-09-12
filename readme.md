@@ -43,7 +43,7 @@ ZeroDivisionError: division by zero
 
 # Motivations behind this act of absurdity? Curiosity and learning.
 
-Consider this project as a practical joke, and academic curiosity, a piece tangible eccentricity. A work of art if you will. With that out of the way motivations:
+Consider this project as a practical joke, and academic curiosity, a piece tangible eccentricity. A work of art if you will. With that out of the way, motivations;
 
 * Curiosity, which Maybe killed the cat.
 * Academic exercise, that May-e was on the subject of tedium.
