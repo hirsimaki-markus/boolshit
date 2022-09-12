@@ -56,12 +56,12 @@ context that supports the classical, boring, booleans `True` and `False`.
 The value of the singleton exists in a superposition of `True` and `False`.
 It shall randomly collapse to either one of them upon being observed either
 directly or indirectly. The only time `Maybe` will not collapse to boolean
-is when it is not operated on. This happens only with plain "Maybe" by
+is when it is not operated on. This happens only with plain `Maybe` by
 itself (when not in interactive prompt) and with an assignment, e.g.: `x = Maybe`.
 
 This means that `Maybe` can be assigned as is and it will be both `True` and
 `False` until the assigned variable is coerced to some other type. In
-essence this means that you can but `Maybe` into any imaginable context
+essence this means that you can put `Maybe` into any imaginable context
 and it will behave exactly as `True` or `False`, depending on your luck.
 
 `Maybe` obeys the limitations of a singleton pattern. `Maybe is Maybe` will
