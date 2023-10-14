@@ -83,10 +83,10 @@ is a duck.
 
 # A most beautifully formatted piece of art
 
-**Q:** Why would you paste source code here? _ALSO, WHAT DID YOU DO TO THE FORMATTING?!_
+**Q:** Why would you paste source code here? _Also, what did you do to the formatting?_
 
 **A:** It's called art. This source is beyond being production ready. It is museum ready.
-Also, documenting a handy list of magic methods.
+Also, I'm documenting a handy list of magic methods for my own amusement.
 
 ```Python
 #!/usr/bin/env python3
